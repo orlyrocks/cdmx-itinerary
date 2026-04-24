@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,7 +286,7 @@ html[lang="es"] [data-lang="es"].block { display: block; }
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.day-card.open .day-body { max-height: 14000px; }
+.day-card.open .day-body { max-height: 16000px; }
 
 .day-body-inner {
   padding: 4px 18px 20px;
@@ -430,6 +428,23 @@ html[lang="es"] [data-lang="es"].block { display: block; }
 }
 
 .place-body-inner p { margin-bottom: 6px; }
+
+.place-address {
+  background: var(--cream-dark);
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--ink);
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.place-address strong {
+  color: var(--ink);
+  display: block;
+  margin-bottom: 2px;
+}
 
 .place-meta {
   display: flex;
@@ -659,8 +674,8 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 <div class="header">
   <div class="header-top">
     <div class="header-eyebrow">
-      <span data-lang="en">Zone-Based Modular Itinerary · v6</span>
-      <span data-lang="es">Itinerario Modular por Zonas · v6</span>
+      <span data-lang="en">Zone-Based Modular Itinerary · v7</span>
+      <span data-lang="es">Itinerario Modular por Zonas · v7</span>
     </div>
     <div class="lang-toggle" id="langToggle">
       <button data-l="en" class="active">EN</button>
@@ -740,8 +755,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Cold beer, cheap tacos. Low-stakes welcome round.</span>
-          <span data-lang="es">Cerveza fría, tacos baratos. Primera ronda low-stakes.</span></p>
+          <div class="place-address"><strong>Calle Bolívar 24, Centro</strong>Lun-Dom 11am-1am · ~3 min del hotel</div>
+          <p><span data-lang="en">Cold beer, cheap tacos. Low-stakes welcome round. Several branches around Centro.</span>
+          <span data-lang="es">Cerveza fría, tacos baratos. Primera ronda low-stakes. Varias sucursales en Centro.</span></p>
         </div></div>
       </div>
 
@@ -757,8 +773,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Tiny counter, zero atmosphere, entirely mandatory. Steps from the hotel.</span>
-          <span data-lang="es">Barra diminuta, cero ambiente, obligatorio. A pasos del hotel.</span></p>
+          <div class="place-address"><strong>Ayuntamiento 21, Centro</strong>Lun-Sáb 11am-11pm · ~5 min del hotel</div>
+          <p><span data-lang="en">Tiny counter, zero atmosphere, entirely mandatory. The classic Bolívar branch is the original.</span>
+          <span data-lang="es">Barra diminuta, cero ambiente, obligatorio. La sucursal de Bolívar es la clásica.</span></p>
         </div></div>
       </div>
 
@@ -774,6 +791,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Av. 5 de Mayo 10, Centro</strong>Lun-Sáb 1pm-12am · Dom 1pm-8pm · ~6 min del hotel</div>
           <p><span data-lang="en">One of the most atmospheric cantinas in the city. Legend says Pancho Villa fired a bullet into the ceiling — the hole is still there.</span>
           <span data-lang="es">Una de las cantinas más atmosféricas. Dicen que Pancho Villa disparó al techo — el hoyo sigue ahí.</span></p>
         </div></div>
@@ -785,7 +803,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
         <div class="place-header">
           <span class="place-emoji">🌮</span>
           <div class="place-title-block">
-            <div class="place-name">Los Cocuyos</div>
+            <div class="place-name">Taquería Los Cocuyos</div>
             <div class="place-tag">
               <span data-lang="en">Suadero/buche · late night · cash only</span>
               <span data-lang="es">Suadero/buche · tarde · solo efectivo</span>
@@ -794,8 +812,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Late-night suadero/buche benchmark. Street corner, cash only.</span>
-          <span data-lang="es">Benchmark de suadero/buche tarde. Esquina, solo efectivo.</span></p>
+          <div class="place-address"><strong>Bolívar 54, Centro</strong>Diario 10am-5am · ~7 min del hotel</div>
+          <p><span data-lang="en">Late-night suadero/buche benchmark. Street corner, cash only. Best after 9pm.</span>
+          <span data-lang="es">Benchmark de suadero/buche tarde. Esquina, solo efectivo. Mejor después de las 9pm.</span></p>
         </div></div>
       </div>
 
@@ -811,6 +830,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Aranda 30, Centro</strong>Lun-Sáb 11am-10pm · ~8 min del hotel</div>
           <p><span data-lang="en">Classic Centro pulquería. Try the curado (flavored). Old-school.</span>
           <span data-lang="es">Pulquería clásica del Centro. Probar el curado. Old-school.</span></p>
         </div></div>
@@ -920,15 +940,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>📍 <strong>Monumento a la Revolución</strong>, Plaza de la República s/n, Col. Tabacalera</p>
-          <p>⏰ <span data-lang="en">Sunday April 26 · 11am-6pm (7 hours)</span>
-          <span data-lang="es">Domingo 26 abril · 11am-6pm (7 horas)</span></p>
-          <p>💰 <span data-lang="en"><strong>FREE entrance</strong> with Acceso Chilango — a free digital pass. Register at <strong>acceso.chilango.com</strong> (name, email, birth year, gender, zip code, short preferences quiz). Pass arrives by email in minutes.</span>
-          <span data-lang="es"><strong>Entrada GRATIS</strong> con Acceso Chilango — un pase digital gratuito. Registrarse en <strong>acceso.chilango.com</strong> (nombre, email, año de nacimiento, género, código postal, quiz corto). El pase llega por email en minutos.</span></p>
-          <p><strong><span data-lang="en">Must register each person individually before going.</span>
+          <div class="place-address"><strong>Monumento a la Revolución</strong>Plaza de la República s/n, Col. Tabacalera<br>Sun Apr 26 · 11am-6pm</div>
+          <p>💰 <span data-lang="en"><strong>FREE entrance</strong> with Acceso Chilango — a free digital pass. Register at <strong>acceso.chilango.com</strong>. Pass arrives by email in minutes.</span>
+          <span data-lang="es"><strong>Entrada GRATIS</strong> con Acceso Chilango — un pase digital gratuito. Registrarse en <strong>acceso.chilango.com</strong>. El pase llega por email en minutos.</span></p>
+          <p><strong><span data-lang="en">Each person must register individually before going.</span>
           <span data-lang="es">Registrar cada persona individualmente antes de ir.</span></strong></p>
-          <p><span data-lang="en">Classic tacos (pastor, suadero, carnitas, campechano, tripita) and experimental options (jabalí, tarántula, jaiba). Live music, contests, activities.</span>
-          <span data-lang="es">Tacos clásicos (pastor, suadero, carnitas, campechano, tripita) y opciones experimentales (jabalí, tarántula, jaiba). Música en vivo, concursos, actividades.</span></p>
+          <p><span data-lang="en">Classic tacos (pastor, suadero, carnitas, campechano) and experimental (jabalí, tarántula, jaiba). Live music, contests, activities.</span>
+          <span data-lang="es">Tacos clásicos (pastor, suadero, carnitas, campechano) y experimentales (jabalí, tarántula, jaiba). Música en vivo, concursos, actividades.</span></p>
 
           <p style="margin-top:10px"><strong><span data-lang="en">Some of the 50+ confirmed taquerías:</span>
           <span data-lang="es">Algunas de las 50+ taquerías confirmadas:</span></strong></p>
@@ -1021,6 +1039,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Plaza de la Constitución, Centro</strong>Palacio Nacional: Mar-Dom 10am-5pm · Gratis con INE/pasaporte</div>
           <p><span data-lang="en">The staircase murals are non-optional. Catedral Metropolitana right there. ~15 min walk south.</span>
           <span data-lang="es">Los murales de la escalera son no-opcionales. Catedral Metropolitana justo ahí. ~15 min al sur.</span></p>
         </div></div>
@@ -1038,6 +1057,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>16 de Septiembre 82, Centro</strong>Lobby abierto 24h · Gratis</div>
           <p><span data-lang="en">Walk into the lobby, look up. 2 min from Zócalo.</span>
           <span data-lang="es">Entrar al lobby y mirar arriba. 2 min del Zócalo.</span></p>
         </div></div>
@@ -1045,9 +1065,49 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 
       <div class="place">
         <div class="place-header">
+          <span class="place-emoji">📬</span>
+          <div class="place-title-block">
+            <div class="place-name">Palacio Postal</div>
+            <div class="place-tag">
+              <span data-lang="en">Free with ID · stunning building</span><span data-lang="es">Gratis con ID · edificio impresionante</span>
+              <span class="status-badge status-verify">
+                <span data-lang="en">Verify Sun hrs</span><span data-lang="es">Verificar dom</span>
+              </span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Tacuba 1, esq. Eje Central, Centro</strong>Lun-Vie 8am-8pm · Sáb 9am-3pm · ~3 min del hotel</div>
+          <p><span data-lang="en">Likely closed Sunday — easy to grab any weekday, you live next door. Free with ID ($50 MXN without).</span>
+          <span data-lang="es">Probablemente cerrado domingo — fácil de hacer cualquier día de semana. Gratis con INE ($50 MXN sin).</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🏛</span>
+          <div class="place-title-block">
+            <div class="place-name">Palacio de Iturbide · Fomento Banamex</div>
+            <div class="place-tag">
+              <span data-lang="en">Colonial courtyard · art exhibits · free</span>
+              <span data-lang="es">Patio colonial · exposiciones · gratis</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Madero 17, Centro</strong>Lun-Dom 10am-7pm · Gratis · ~4 min del hotel</div>
+          <p><span data-lang="en">18th-century colonial courtyard hosting rotating art exhibitions. Free guided tours at 12, 2 and 4pm. Hidden gem — most tourists miss it.</span>
+          <span data-lang="es">Patio colonial del siglo XVIII con exposiciones rotativas. Visitas guiadas gratis a las 12, 14 y 16h. Hidden gem — la mayoría de turistas lo pasan de largo.</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
           <span class="place-emoji">🧸</span>
           <div class="place-title-block">
-            <div class="place-name">MiBIMBO</div>
+            <div class="place-name">MiBIMBO · Museo Interactivo del Pan</div>
             <div class="place-tag">
               <span data-lang="en">Interactive museum · 1.5-2 hrs</span><span data-lang="es">Museo interactivo · 1.5-2 hrs</span>
             </div>
@@ -1055,14 +1115,71 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Isabel La Católica 51, 8 min walk. Fri-Sun 10am-7pm. 11 interactive zones. ~$100 MXN / $120 intl.</span>
-          <span data-lang="es">Isabel La Católica 51, 8 min a pie. Fri-Sun 10am-7pm. 11 zonas interactivas. ~$100 MXN / $120 intl.</span></p>
+          <div class="place-address"><strong>Isabel La Católica 51, Centro</strong>Mar-Jue 9am-6pm · Vie-Dom 10am-7pm · Cerrado lun<br>~8 min del hotel · $100 MXN / $120 intl</div>
+          <p><span data-lang="en">11 interactive zones covering Bimbo history, baking tradition, technology. Uniquely Mexican cultural exhibit.</span>
+          <span data-lang="es">11 zonas interactivas: historia Bimbo, tradición panadera, campo y tecnología. Experiencia cultural 100% mexicana.</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🧀</span>
+          <div class="place-title-block">
+            <div class="place-name">Mercado de San Juan</div>
+            <div class="place-tag">
+              <span data-lang="en">Artisan cheeses, charcuterie</span><span data-lang="es">Quesos artesanales, charcutería</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Ernesto Pugibet 21, Centro</strong>Lun-Dom 7am-5pm · ~10 min del hotel</div>
+          <p><span data-lang="en">Curated, international, high quality. Much calmer than La Merced — good intro to markets.</span>
+          <span data-lang="es">Curado, internacional, alta calidad. Más tranquilo que La Merced — buena intro a los mercados.</span></p>
         </div></div>
       </div>
 
       <div class="section-label">
-        <span data-lang="en">Night owls (if energy remains)</span><span data-lang="es">Night owls (si queda energía)</span>
+        <span data-lang="en">Dinner</span><span data-lang="es">Cena</span>
       </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🍽</span>
+          <div class="place-title-block">
+            <div class="place-name">Café de Tacuba</div>
+            <div class="place-tag">
+              <span data-lang="en">Comfort food · since 1912</span><span data-lang="es">Comfort food · desde 1912</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Tacuba 28, Centro</strong>Lun-Dom 8am-11:30pm · ~5 min del hotel</div>
+          <p><span data-lang="en">Classic Mexican comfort food in a stunning colonial space. Try the enchiladas.</span>
+          <span data-lang="es">Comida mexicana clásica en espacio colonial stunning. Pide las enchiladas.</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🏛</span>
+          <div class="place-title-block">
+            <div class="place-name">Sanborns de los Azulejos</div>
+            <div class="place-tag">
+              <span data-lang="en">16th-century Talavera courtyard</span><span data-lang="es">Patio Talavera s. XVI</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Madero 4, Centro</strong>Lun-Dom 7am-1am · ~4 min del hotel</div>
+          <p><span data-lang="en">Dinner in the 16th-century Talavera-tiled courtyard. Food is classic; space is spectacular.</span>
+          <span data-lang="es">Cena en el patio del s. XVI con azulejos de Talavera. Comida clásica; espacio espectacular.</span></p>
+        </div></div>
+      </div>
+
+      <div class="section-label">Night owls</div>
 
       <div class="place">
         <div class="place-header">
@@ -1076,8 +1193,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Cantina on the mariachi plaza. Genuinely electric on a weekend night. ~15-min walk or short Uber.</span>
-          <span data-lang="es">Cantina en la plaza de los mariachis. Genuinamente eléctrica un fin de semana. ~15 min a pie o Uber corto.</span></p>
+          <div class="place-address"><strong>Plaza Garibaldi 12, Centro</strong>Lun-Dom 1pm-3am · ~15 min caminando</div>
+          <p><span data-lang="en">Cantina on the mariachi plaza. Genuinely electric on a weekend night. Touristy but authentic.</span>
+          <span data-lang="es">Cantina en la plaza de los mariachis. Genuinamente eléctrica un fin de semana. Turística pero auténtica.</span></p>
         </div></div>
       </div>
 
@@ -1093,6 +1211,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Luis Moya 31, Centro</strong>Lun-Sáb 5pm-2am · ~5 min del hotel</div>
           <p><span data-lang="en">Mezcal-cantina hybrid. Small, local, excellent selection.</span>
           <span data-lang="es">Mezcal-cantina híbrida. Small, local, excelente selección.</span></p>
         </div></div>
@@ -1189,8 +1308,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>📌 Periférico Sur S/N, <span data-lang="en">next to the Olympic Rowing Track, Col. Barrio 18</span><span data-lang="es">junto a la Pista Olímpica, Col. Barrio 18</span>.</p>
-          <p>⏰ <span data-lang="en">Daily 8am-5pm (some operators until 7pm)</span><span data-lang="es">Daily 8am-5pm (algunos hasta 7pm)</span></p>
+          <div class="place-address"><strong>Periférico Sur S/N, Col. Barrio 18, Xochimilco</strong>Junto a la Pista Olímpica · Diario 8am-5pm (algunos operadores 7pm)</div>
           <p>💰 <strong>$750 MXN/hr</strong> <span data-lang="en">per trajinera (official rate) · capacity 18-20 people</span><span data-lang="es">por trajinera (rate oficial) · capacidad 18-20 personas</span></p>
           <p>🌿 <span data-lang="en">One of 3 ecological embarcaderos — launches into the Natural Protected Area.</span>
           <span data-lang="es">Uno de los 3 embarcaderos ecológicos — lanza al Área Natural Protegida.</span></p>
@@ -1224,16 +1342,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <p><strong><span data-lang="en">What you see:</span><span data-lang="es">Qué ves:</span></strong>
           <span data-lang="en"> rows of chard, lettuce, quelites, corn, flowers — all growing on islands separated by narrow canals, anchored by ahuejote trees.</span>
           <span data-lang="es"> hileras de acelgas, lechuga, quelites, maíz, flores — todo en islas separadas por canales, ancladas por ahuejotes.</span></p>
-          <p><strong><span data-lang="en">No reservation needed:</span><span data-lang="es">Sin reserva:</span></strong></p>
           <ul class="inline-list">
-            <li><span data-lang="en">Ask the remero (boatman) to stop at active chinampas</span>
+            <li><span data-lang="en">Ask the remero to stop at active chinampas</span>
             <span data-lang="es">Pedir al remero que pare en chinampas activas</span></li>
             <li><span data-lang="en">Buy direct from farmers (cash, small bills)</span>
             <span data-lang="es">Comprar directo del productor (efectivo, cambio chico)</span></li>
-            <li><span data-lang="en">Food from floating boats: quesadillas on a comal, elotes, tlacoyos, esquites, micheladas, pulque</span>
-            <span data-lang="es">Comida de trajineras: quesadillas al comal, elotes, tlacoyos, esquites, micheladas, pulque</span></li>
-            <li><span data-lang="en">Watch garzas, gallaretas, ducks</span>
-            <span data-lang="es">Ver garzas, gallaretas, patos</span></li>
+            <li><span data-lang="en">Food from floating boats: quesadillas, elotes, tlacoyos, esquites, micheladas, pulque</span>
+            <span data-lang="es">Comida de trajineras: quesadillas, elotes, tlacoyos, esquites, micheladas, pulque</span></li>
           </ul>
         </div></div>
       </div>
@@ -1255,10 +1370,8 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
         <div class="place-body"><div class="place-body-inner">
           <p><span data-lang="en">The real name is <strong>Isla Teshuilo</strong> — locals and boatmen call it "Isla de las Muñecas."</span>
           <span data-lang="es">El nombre real es <strong>Isla Teshuilo</strong> — locales y remeros la conocen como "Isla de las Muñecas."</span></p>
-          <p><span data-lang="en">The late Julián Santana spent decades hanging dolls from the trees, believing the spirit of a drowned girl haunted the island. He drowned himself in 2001, reportedly in the same spot as the girl.</span>
-          <span data-lang="es">Julián Santana pasó décadas colgando muñecas de los árboles, creyendo que el espíritu de una niña ahogada rondaba la isla. Él mismo se ahogó en 2001, en el mismo lugar que la niña.</span></p>
-          <p><span data-lang="en">Hundreds of weathered dolls hang from the trees. Genuinely eerie.</span>
-          <span data-lang="es">Cientos de muñecas descompuestas cuelgan de los árboles. Genuinamente eerie.</span></p>
+          <p><span data-lang="en">Julián Santana spent decades hanging dolls from the trees, believing the spirit of a drowned girl haunted the island. He drowned himself in 2001, reportedly in the same spot.</span>
+          <span data-lang="es">Julián Santana pasó décadas colgando muñecas de los árboles, creyendo que el espíritu de una niña ahogada rondaba la isla. Él mismo se ahogó en 2001, en el mismo lugar.</span></p>
           <p>⚠️ <span data-lang="en">Tell the boatman at the start: <em>"Queremos ir a Isla Teshuilo — la Isla de las Muñecas."</em></span>
           <span data-lang="es">Decir al remero al inicio: <em>"Queremos ir a Isla Teshuilo — la Isla de las Muñecas."</em></span></p>
         </div></div>
@@ -1280,6 +1393,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Rosario 132, La Merced Balbuena</strong>Lun-Dom 6am-6pm · Metro Merced</div>
           <p><span data-lang="en">Every ingredient in a labyrinth. Daytime only, bag in front. Stay together with a Spanish speaker.</span>
           <span data-lang="es">Todo ingrediente en un laberinto. Daytime only, bolsa al frente. Mantenerse juntos con hispanoparlante.</span></p>
         </div></div>
@@ -1297,25 +1411,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Ocean of cempasúchil and roses. Stunning.</span>
-          <span data-lang="es">Océano de cempasúchil y rosas. Stunning.</span></p>
-        </div></div>
-      </div>
-
-      <div class="place">
-        <div class="place-header">
-          <span class="place-emoji">🔮</span>
-          <div class="place-title-block">
-            <div class="place-name">Mercado de Sonora</div>
-            <div class="place-tag">
-              <span data-lang="en">Herbs, folk remedies, curanderas</span><span data-lang="es">Hierbas, remedios, curanderas</span>
-            </div>
-          </div>
-          <span class="place-plus">+</span>
-        </div>
-        <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Not curated. Anthropological appetites only.</span>
-          <span data-lang="es">No curated. Solo apetitos antropológicos.</span></p>
+          <div class="place-address"><strong>Guillermo Prieto 45, Jamaica</strong>Lun-Dom 24 horas · Mejor temprano (antes 8am)</div>
+          <p><span data-lang="en">Ocean of cempasúchil and roses. Stunning at sunrise.</span>
+          <span data-lang="es">Océano de cempasúchil y rosas. Impresionante al amanecer.</span></p>
         </div></div>
       </div>
 
@@ -1331,8 +1429,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Buenavista area, on the way back to Centro. Worth it.</span>
-          <span data-lang="es">Buenavista, de regreso al Centro. Worth it.</span></p>
+          <div class="place-address"><strong>Eje 1 Norte Mosqueta, Buenavista</strong>Lun-Dom 8:30am-7:30pm · Gratis · Metro Buenavista</div>
+          <p><span data-lang="en">One of the most beautiful libraries in the world. Gabriel Orozco's whale sculpture suspended in the nave. Must-see.</span>
+          <span data-lang="es">Una de las bibliotecas más hermosas del mundo. La escultura de ballena de Gabriel Orozco suspendida en la nave. Imprescindible.</span></p>
         </div></div>
       </div>
 
@@ -1350,8 +1449,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Recovery mode in Centro.</span>
-          <span data-lang="es">Recovery mode en el Centro.</span></p>
+          <div class="place-address"><strong>Varias sucursales · Centro: López 80</strong>Lun-Dom 24 horas · Económico, local</div>
+          <p><span data-lang="en">Recovery mode in Centro. Several branches, not gentrified — real local spot.</span>
+          <span data-lang="es">Recovery mode en el Centro. Varias sucursales, no gentrificado — local de verdad.</span></p>
         </div></div>
       </div>
 
@@ -1440,10 +1540,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>⏰ <span data-lang="en">Tue-Sun 9am-6pm (halls close ~4:45pm). No reservation needed.</span>
-          <span data-lang="es">Tue-Sun 9am-6pm (halls cierran ~4:45pm). Taquilla directa, no reservation.</span></p>
-          <p>💰 <span data-lang="en">~$105 MXN nationals/residents, ~$210 general</span>
-          <span data-lang="es">~$105 MXN nacionales/residentes, ~$210 general</span></p>
+          <div class="place-address"><strong>Av. Paseo de la Reforma s/n, Chapultepec Polanco</strong>Mar-Dom 9am-6pm (halls cierran ~4:45pm) · Cerrado lun<br>~$105 MXN nacionales · ~$210 MXN general · No reservation</div>
           <p><span data-lang="en">Aztec, Maya, Olmec, Zapotec. Bilingual signage. Get there at opening.</span>
           <span data-lang="es">Azteca, Maya, Olmeca, Zapoteca. Signage bilingüe. Llegar al opening.</span></p>
         </div></div>
@@ -1462,12 +1559,11 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Inside Museo de Antropología, main floor</strong>Mar-Dom 9am-5pm · OpenTable or walk-in</div>
           <p><span data-lang="en">Operated by CMR. Menu organized by the same regions as the museum halls: Baja/Norte, Central/Pacífico, Sur/Sureste.</span>
           <span data-lang="es">Operado por CMR. Menú organizado por las mismas regiones que las salas del museo: Baja/Norte, Central/Pacífico, Sur/Sureste.</span></p>
           <p><strong><span data-lang="en">Breakfast:</span><span data-lang="es">Desayuno:</span></strong> chilaquiles, enmoladas, enfrijoladas oaxaqueñas, crepas de huitlacoche.</p>
           <p><strong><span data-lang="en">Lunch:</span><span data-lang="es">Comida:</span></strong> chile relleno de chilorio de pulpo, tetela de chicharrón prensado y camarón, filete en costra de mole.</p>
-          <p>⏰ <span data-lang="en">9am-5pm, Tue-Sun. OpenTable or walk in.</span>
-          <span data-lang="es">9am-5pm, Tue-Sun. OpenTable o walk-in.</span></p>
         </div></div>
       </div>
 
@@ -1484,7 +1580,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>⏰ Tue-Sun 9am-5pm · ~$95 MXN.</p>
+          <div class="place-address"><strong>Bosque de Chapultepec Primera Sección</strong>Mar-Dom 9am-5pm · Cerrado lun · ~$95 MXN · Taquilla directa</div>
           <p><span data-lang="en">City views, Mexican history from Reform War through Maximiliano. Walk up adds 15-20 min.</span>
           <span data-lang="es">Vistas de la ciudad, historia desde Reforma hasta Maximiliano. Subir la colina agrega 15-20 min.</span></p>
         </div></div>
@@ -1505,13 +1601,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>⏰ Tue-Sun 10:15am-5:15pm · ~$85 MXN · <span data-lang="en">plan 1.5-2 hrs for both:</span><span data-lang="es">plan 1.5-2 hrs para ambas:</span></p>
+          <div class="place-address"><strong>Av. Paseo de la Reforma s/n, Bosque de Chapultepec</strong>Mar-Dom 10:15am-5:15pm · Cerrado lun · ~$85 MXN</div>
           <p><strong>🔥 "Relatos modernos: Colección Gelman Santander"</strong></p>
-          <p><span data-lang="en">68 works including 10 Fridas, Rivera, Orozco, Siqueiros, Tamayo, María Izquierdo. <strong>This may be the last chance to see these in Mexico for years</strong> — the collection is being transferred to Spain under a controversial deal with Fundación Banco Santander.</span>
-          <span data-lang="es">68 obras incluyendo 10 Fridas, Rivera, Orozco, Siqueiros, Tamayo, María Izquierdo. <strong>Puede ser la última oportunidad de verlas en México en años</strong> — la colección se transfiere a España bajo un deal controversial con Fundación Banco Santander.</span></p>
+          <p><span data-lang="en">68 works including 10 Fridas, Rivera, Orozco, Siqueiros, Tamayo. <strong>May be the last chance to see these in Mexico for years</strong> — the collection is being transferred to Spain.</span>
+          <span data-lang="es">68 obras incluyendo 10 Fridas, Rivera, Orozco, Siqueiros, Tamayo. <strong>Puede ser la última oportunidad de verlas en México en años</strong> — la colección se transfiere a España.</span></p>
           <p><strong>🌀 "Remedios Varo: Habitantes de lo insólito"</strong></p>
-          <p><span data-lang="en">~90 pieces: paintings, never-before-seen sketches, personal notebooks, photographs, books from her library. Open through July 5, 2026.</span>
-          <span data-lang="es">~90 piezas: pinturas, bocetos nunca vistos, cuadernos, fotografías, libros de su biblioteca. Abierto hasta 5 jul 2026.</span></p>
+          <p><span data-lang="en">~90 pieces: paintings, sketches, notebooks, photographs, library books. Open through July 5, 2026.</span>
+          <span data-lang="es">~90 piezas: pinturas, bocetos, cuadernos, fotografías, libros de su biblioteca. Abierto hasta 5 jul 2026.</span></p>
         </div></div>
       </div>
 
@@ -1547,9 +1643,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p>⏰ Daily 10:30am-6:30pm · <span data-lang="en">free</span><span data-lang="es">gratis</span>.</p>
-          <p><span data-lang="en">Dalí, Rodin, Monet. Polanco building is architectural candy. Self-guided, visual. ~10 min Uber from Chapultepec.</span>
-          <span data-lang="es">Dalí, Rodin, Monet. El edificio de Polanco es architectural candy. Self-guided, visual. ~10 min Uber desde Chapultepec.</span></p>
+          <div class="place-address"><strong>Plaza Carso · Blvd. Cervantes Saavedra 303, Granada</strong>Diario 10:30am-6:30pm · Gratis · ~10 min Uber desde Chapultepec</div>
+          <p><span data-lang="en">Dalí, Rodin, Monet. Polanco building is architectural candy. Self-guided, visual.</span>
+          <span data-lang="es">Dalí, Rodin, Monet. El edificio de Polanco es architectural candy. Self-guided, visual.</span></p>
         </div></div>
       </div>
 
@@ -1570,6 +1666,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Blvd. Cervantes Saavedra 303, Granada (Plaza Carso)</strong>Lun-Dom 7am-10pm · Al lado de Soumaya</div>
           <p><span data-lang="en">Right next to Soumaya. Great regroup spot.</span>
           <span data-lang="es">Justo al lado de Soumaya. Gran spot para regroup.</span></p>
         </div></div>
@@ -1585,8 +1682,8 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Could do drinks here instead of a full dinner if the Sala Gastronómica lunch was big.</span>
-          <span data-lang="es">Podría ser drinks-only si el lunch en Sala Gastronómica fue grande.</span></p>
+          <p><span data-lang="en">SMWS partner. Could do drinks here instead of a full dinner if the Sala Gastronómica lunch was big.</span>
+          <span data-lang="es">Partner SMWS. Podría ser drinks-only si el lunch en Sala Gastronómica fue grande.</span></p>
         </div></div>
       </div>
 
@@ -1619,13 +1716,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Credit card guarantee required. <strong>$250 MXN penalty/person</strong> for no-show or cancel <24 hrs.</span>
-          <span data-lang="es">Credit card guarantee required. <strong>$250 MXN penalty/persona</strong> por no-show o cancelación <24 hrs.</span></p>
-          <p><strong>90-min seated time.</strong></p>
+          <div class="place-address"><strong>Amberes 65, Juárez (puerta #13, sin letrero)</strong>Lun-Sáb 6pm-2am · Reserva obligatoria</div>
+          <p><span data-lang="en">Credit card guarantee required. <strong>$250 MXN penalty/person</strong> for no-show or cancel <24 hrs. <strong>90-min seated time.</strong></span>
+          <span data-lang="es">Credit card guarantee required. <strong>$250 MXN penalty/persona</strong> por no-show o cancelación <24 hrs. <strong>90-min seated time.</strong></span></p>
           <p><span data-lang="en">Look for door <strong>#13</strong>, no sign outside. When you walk in, the whole staff shouts "¡Bienvenidos!" — that's how you know you're in.</span>
           <span data-lang="es">Buscar puerta <strong>#13</strong>, sin letrero afuera. Al entrar, todo el staff grita "¡Bienvenidos!" — así sabes que estás en el lugar correcto.</span></p>
-          <p><span data-lang="en">Cocktails run $250-300 MXN each.</span>
-          <span data-lang="es">Cocktails corren $250-300 MXN c/u.</span></p>
+          <p><span data-lang="en">Cocktails $250-300 MXN each. <strong>Smart casual dress code strictly enforced</strong> — no sneakers or shorts.</span>
+          <span data-lang="es">Cocktails $250-300 MXN c/u. <strong>Smart casual dress code estricto</strong> — no tenis ni shorts.</span></p>
         </div></div>
       </div>
 
@@ -1642,14 +1739,16 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
         <div class="place-header">
           <span class="place-emoji">🥃</span>
           <div class="place-title-block">
-            <div class="place-name">Tlecān / Licorería Limantour / Diente de Oro</div>
+            <div class="place-name">Licorería Limantour / Diente de Oro</div>
             <div class="place-tag">Roma nightlife</div>
           </div>
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Three options close to each other in Roma.</span>
-          <span data-lang="es">Tres opciones cercanas entre sí en Roma.</span></p>
+          <p><span data-lang="en"><strong>Limantour:</strong> Álvaro Obregón 106, Roma Norte · world-class cocktails.<br>
+          <strong>Diente de Oro:</strong> Orizaba 59, Roma Norte · whisky destination.</span>
+          <span data-lang="es"><strong>Limantour:</strong> Álvaro Obregón 106, Roma Norte · cocteles world-class.<br>
+          <strong>Diente de Oro:</strong> Orizaba 59, Roma Norte · destino de whisky.</span></p>
         </div></div>
       </div>
 
@@ -1664,9 +1763,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
         <div class="day-date">
           <span data-lang="en">Wed · Apr 29</span><span data-lang="es">Mié · 29 Abr</span>
         </div>
-        <div class="day-title">Coyoacán → Roma</div>
+        <div class="day-title">
+          <span data-lang="en">Coyoacán → Chava → Tlecan</span>
+          <span data-lang="es">Coyoacán → Chava → Tlecan</span>
+        </div>
         <div class="day-zone">
-          <span data-lang="en">💙 South · Frida day</span><span data-lang="es">💙 Sur · Frida day</span>
+          <span data-lang="en">💙 Frida day + seafood + mezcal</span>
+          <span data-lang="es">💙 Frida day + mariscos + mezcal</span>
         </div>
       </div>
       <span class="day-energy energy-med">
@@ -1678,7 +1781,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 
       <div class="anchor">
         <div class="anchor-label">
-          <span data-lang="en">Anchor · 12:00pm noon</span><span data-lang="es">Anchor · 12:00pm</span>
+          <span data-lang="en">Anchor #1 · 12:00pm noon</span><span data-lang="es">Anchor #1 · 12:00pm</span>
         </div>
         <div class="anchor-title">Museo Frida Kahlo · Casa Azul</div>
         <div class="anchor-time">
@@ -1688,6 +1791,37 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
             <span data-lang="en">Booked</span><span data-lang="es">Confirmado</span>
           </span>
         </div>
+      </div>
+
+      <div class="callout callout-verde">
+        <span data-lang="en"><strong>Day flow:</strong> Casa Azul → wander Barrio Coyoacán → <strong>Mi Compa Chava Coyoacán branch</strong> (10 min walk, less busy than Roma) → Uber to Roma Norte → <strong>Tlecan</strong> for mezcal night cap.</span>
+        <span data-lang="es"><strong>Flow del día:</strong> Casa Azul → wander Barrio Coyoacán → <strong>Mi Compa Chava sucursal Coyoacán</strong> (10 min caminando, menos saturada que Roma) → Uber a Roma Norte → <strong>Tlecan</strong> para cerrar con mezcal.</span>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-title">Timeline</div>
+<pre data-lang="en">~11:30am  Uber → Coyoacán (25 min from hotel)
+12:00pm   💙 Casa Azul (~1.5 hrs)
+~1:30pm   Barrio Coyoacán: plazas, café,
+          mercado, elotes, vibe
+~5:00pm   🦐 Mi Compa Chava COYOACÁN
+          10 min walk from Jardín Centenario
+~7:30pm   Uber → Roma Norte (~25 min)
+~8:00pm   🍸 Tlecan opens 6pm, perfect window
+          Álvaro Obregón 228
+~10:00pm  Uber to hotel OR continue
+          Limantour is 5 min walking</pre>
+<pre data-lang="es">~11:30am  Uber → Coyoacán (25 min del hotel)
+12:00pm   💙 Casa Azul (~1.5 hrs)
+~1:30pm   Barrio Coyoacán: plazas, café,
+          mercado, elotes, vibe
+~5:00pm   🦐 Mi Compa Chava COYOACÁN
+          10 min a pie de Jardín Centenario
+~7:30pm   Uber → Roma Norte (~25 min)
+~8:00pm   🍸 Tlecan abre 6pm, ventana perfecta
+          Álvaro Obregón 228
+~10:00pm  Uber al hotel O continuar
+          Limantour a 5 min caminando</pre>
       </div>
 
       <div class="place">
@@ -1705,9 +1839,8 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><strong>6 tickets · <span data-lang="en">Wed Apr 29</span><span data-lang="es">Mié 29 Abr</span> · 12:00pm (noon)</strong></p>
+          <div class="place-address"><strong>Londres 247, Del Carmen, Coyoacán</strong>Mié 11am-6pm · Wed Apr 29 · 12:00pm · 6 tickets</div>
           <p>4 Entrada General ($320 MXN <span data-lang="en">each</span><span data-lang="es">c/u</span>) + 2 Residentes Nacionales ($160 MXN <span data-lang="en">each</span><span data-lang="es">c/u</span>).</p>
-          <p>⏰ <span data-lang="en">Wed hours: 11am-6pm.</span><span data-lang="es">Horario miércoles: 11am-6pm.</span></p>
           <p>💾 <strong><span data-lang="en">Save confirmation emails for entry.</span><span data-lang="es">Guardar emails de confirmación para entrada.</span></strong></p>
         </div></div>
       </div>
@@ -1723,14 +1856,16 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <div class="place-title-block">
             <div class="place-name">Barrio de Coyoacán</div>
             <div class="place-tag">
-              <span data-lang="en">Gardens, market, elotes</span><span data-lang="es">Jardines, mercado, elotes</span>
+              <span data-lang="en">Jardín Centenario + Hidalgo · vibe is the destination</span>
+              <span data-lang="es">Jardín Centenario + Hidalgo · el vibe es el destino</span>
             </div>
           </div>
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">The vibe IS the destination.</span>
-          <span data-lang="es">El vibe ES el destino.</span></p>
+          <div class="place-address"><strong>Jardín Centenario + Jardín Hidalgo</strong>Centro de Coyoacán · walkable · always open</div>
+          <p><span data-lang="en">Plaza with market stalls, elotes, palomas, open cafés. Come without an agenda.</span>
+          <span data-lang="es">Plaza con puestos del mercado, elotes, palomas, cafés al aire libre. Vengan sin agenda.</span></p>
         </div></div>
       </div>
 
@@ -1747,8 +1882,28 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Single-origin, serious baristas.</span>
-          <span data-lang="es">Single-origin, baristas serios.</span></p>
+          <div class="place-address"><strong>Higuera 40-A, Del Carmen, Coyoacán</strong>Lun-Vie 8am-8pm · Sáb-Dom 9am-8pm</div>
+          <p><span data-lang="en">Single-origin, serious baristas. 3 min walk from Jardín Centenario.</span>
+          <span data-lang="es">Single-origin, baristas serios. 3 min de Jardín Centenario.</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🥃</span>
+          <div class="place-title-block">
+            <div class="place-name">Cantina El Centenario</div>
+            <div class="place-tag">
+              <span data-lang="en">Authentic cantina · mezcal + sopes</span>
+              <span data-lang="es">Cantina auténtica · mezcal + sopes</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Vicente Suárez 42, Condesa</strong>Lun-Mié 12pm-12am · Jue-Sáb 12pm-2am · (Hay sucursal en Coyoacán también)</div>
+          <p><span data-lang="en">Authentic cantina: sopes, chamorro, cold beers, classic vibe. Real cantina prices — this is what this guide defends.</span>
+          <span data-lang="es">Cantina auténtica: sopes, chamorro, cervezas frías, ambiente clásico. Precios de cantina real — esto es lo que esta guía defiende.</span></p>
         </div></div>
       </div>
 
@@ -1765,8 +1920,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Serious mezcal list.</span>
-          <span data-lang="es">Lista de mezcales seria.</span></p>
+          <div class="place-address"><strong>Plaza Jardín Centenario 12, Coyoacán</strong>Lun-Dom 1pm-11pm · Serious mezcal list</div>
+          <p><span data-lang="en">Upscale Mexican authorship + serious mezcal list in colonial courtyard. Good dinner if staying south.</span>
+          <span data-lang="es">Comida mexicana de autor + lista seria de mezcal en patio colonial. Buena cena si se quedan al sur.</span></p>
         </div></div>
       </div>
 
@@ -1783,27 +1939,25 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Atmospheric courtyard, mezcal, late-afternoon option.</span>
-          <span data-lang="es">Patio atmosférico, mezcal, late-afternoon option.</span></p>
+          <div class="place-address"><strong>Ignacio Zaragoza 57, Del Carmen, Coyoacán</strong>Mar-Dom 1pm-11pm</div>
+          <p><span data-lang="en">Coyoacán institution. Atmospheric courtyard, mezcal, late-afternoon option.</span>
+          <span data-lang="es">Institución de Coyoacán. Patio atmosférico, mezcal, late-afternoon option.</span></p>
         </div></div>
       </div>
 
-      <p class="day-intro">
-        <strong>Reconvene:</strong> Jardín Centenario, mid-to-late afternoon.
-      </p>
-
       <div class="section-label">
-        <span data-lang="en">Dinner · Roma</span><span data-lang="es">Cena · Roma</span>
+        <span data-lang="en">Dinner · Mi Compa Chava COYOACÁN</span>
+        <span data-lang="es">Cena · Mi Compa Chava COYOACÁN</span>
       </div>
 
       <div class="place">
         <div class="place-header">
           <span class="place-emoji">🦐</span>
           <div class="place-title-block">
-            <div class="place-name">Mi Compa Chava</div>
+            <div class="place-name">Mi Compa Chava — Coyoacán branch</div>
             <div class="place-tag">
-              <span data-lang="en">Sinaloa-style seafood · Roma</span>
-              <span data-lang="es">Mariscos Sinaloa · Roma</span>
+              <span data-lang="en">Sinaloa-style seafood · less busy than Roma</span>
+              <span data-lang="es">Mariscos Sinaloa · menos saturada que Roma</span>
               <span class="status-badge status-pending">
                 <span data-lang="en">DM pending</span><span data-lang="es">DM pendiente</span>
               </span>
@@ -1812,22 +1966,68 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Modern Sinaloa-style seafood. Raw bar, ceviches, aguachiles, seafood towers. Banda and corridos playing.</span>
-          <span data-lang="es">Mariscos modernos estilo Sinaloa. Raw bar, ceviches, aguachiles, torres de mariscos. Banda y corridos.</span></p>
-          <p>📍 Roma: Zacatecas 172. ⏰ Tue-Sun 12pm-8pm.</p>
-          <p><strong>Action:</strong> <span data-lang="en">DM @micompachava on Instagram for weekday reservation, party of 6.</span>
-          <span data-lang="es">DM @micompachava en Instagram para reserva weekday, party of 6.</span></p>
-          <p><span data-lang="en">If walk-in only, arrive by 5:30-6pm.</span>
-          <span data-lang="es">Si walk-in only, llegar a las 5:30-6pm.</span></p>
+          <div class="place-address"><strong>Pdte. Venustiano Carranza 109 (esq. Felipe Carrillo Puerto), Coyoacán</strong>Mar-Dom 12pm-8pm · Cerrado lun · 10 min caminando de Jardín Centenario</div>
+          <p><span data-lang="en"><strong>Why the Coyoacán branch:</strong> less crowded than Roma, same menu, same chef (Salvador "Gallo" Orozco), same Sinaloa-meets-street-food vibe. No backtrack after Casa Azul.</span>
+          <span data-lang="es"><strong>Por qué la sucursal Coyoacán:</strong> menos saturada que Roma, misma carta, mismo chef (Salvador "Gallo" Orozco), mismo vibe Sinaloa meets street food. Sin backtrack post-Casa Azul.</span></p>
+          <p><strong><span data-lang="en">Must-orders:</span><span data-lang="es">Ordenar sin falta:</span></strong></p>
+          <ul class="inline-list">
+            <li><span data-lang="en">La Señora Torres — seafood tower (camarón, pulpo, callo, atún) with chile morita sauce ($590)</span>
+            <span data-lang="es">La Señora Torres — torre de mariscos (camarón, pulpo, callo, atún) con salsa morita ($590)</span></li>
+            <li><span data-lang="en">Taco de birria de mantarraya</span>
+            <span data-lang="es">Taco de birria de mantarraya</span></li>
+            <li><span data-lang="en">Camarones zarandeados</span>
+            <span data-lang="es">Camarones zarandeados</span></li>
+            <li><span data-lang="en">Ostiones frescos · aguachiles · almeja gratinada</span>
+            <span data-lang="es">Ostiones frescos · aguachiles · almeja gratinada</span></li>
+          </ul>
+          <p>💰 <span data-lang="en">Check avg $300-900 MXN/person</span>
+          <span data-lang="es">Cheque promedio $300-900 MXN/persona</span></p>
+          <p><strong>Action:</strong> <span data-lang="en">DM @micompachava on Instagram. Weekday reservations accepted. Arrive ~5pm to beat rush. Party of 6.</span>
+          <span data-lang="es">DM @micompachava en Instagram. Aceptan reserva entre semana. Llegar ~5pm para beat el rush. Party of 6.</span></p>
           <p><strong>Backup:</strong> Abrasamar Expendio de Maíz (Roma).</p>
+        </div></div>
+      </div>
+
+      <div class="section-label">
+        <span data-lang="en">Night cap · Tlecan (Roma Norte)</span><span data-lang="es">Night cap · Tlecan (Roma Norte)</span>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
+          <span class="place-emoji">🍸</span>
+          <div class="place-title-block">
+            <div class="place-name">Tlecan · Mezcal Cantina</div>
+            <div class="place-tag">
+              <span data-lang="en">Serious mezcal by region · walk-in</span>
+              <span data-lang="es">Mezcales serios por región · walk-in</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Av. Álvaro Obregón 228, Roma Norte</strong>Lun-Dom 6pm-2am · Walk-in · ~25 min Uber desde Coyoacán</div>
+          <p><span data-lang="en">Locals prefer Tlecan over Handshake. Serious mezcal selection organized by state: Aguascalientes, Chihuahua, Durango, Guerrero, Jalisco, Oaxaca, Sonora, Tamaulipas. Each with maestro mezcalero + region + tasting notes.</span>
+          <span data-lang="es">Los chilangos prefieren Tlecan sobre Handshake. Selección de mezcales seria organizada por estado: Aguascalientes, Chihuahua, Durango, Guerrero, Jalisco, Oaxaca, Sonora, Tamaulipas. Cada uno con maestro mezcalero + región + notas de cata.</span></p>
+          <p><strong><span data-lang="en">Signature cocktails ($155-215):</span>
+          <span data-lang="es">Cocteles signature ($155-215):</span></strong></p>
+          <ul class="inline-list">
+            <li><strong>Pulque colada</strong> — <span data-lang="en">pulque + pineapple milk punch + coconut + mezcal w/ coconut fat wash</span><span data-lang="es">pulque + milk punch de piña + coco + mezcal con fat wash de coco</span></li>
+            <li><strong>Ocelóyotl (carajillo)</strong> — <span data-lang="en">anise-cinnamon mezcal + corn liqueur + cold brew + chocolate bitters</span><span data-lang="es">mezcal con anís-canela + licor de elote + cold brew + bitters de chocolate</span></li>
+            <li><strong>Negroni de cacao</strong> — <span data-lang="en">Campari with cacao husks + rosso + mezcal</span><span data-lang="es">Campari con cáscaras de cacao + rosso + mezcal</span></li>
+            <li><strong>Bandera Tlecan</strong> — <span data-lang="en">mezcal + clarified green sangrita</span><span data-lang="es">mezcal + sangrita verde clarificada</span></li>
+          </ul>
+          <p><strong><span data-lang="en">Food ($95-230):</span><span data-lang="es">Botanas ($95-230):</span></strong>
+          <span data-lang="en"> Sikil pak maya, false burrata with quesillo, sope de milpa, pambacito sonorense, atún tostadas.</span>
+          <span data-lang="es"> Sikil pak maya, burrata falsa con quesillo, sope de milpa, pambacito sonorense, tostadas de atún.</span></p>
+          <p>🔗 <a href="https://www.tlecan.com/menu.pdf" style="color:var(--terracota)">menu.pdf</a> · <a href="https://tlecan.com/cocteleria.pdf" style="color:var(--terracota)">cocteleria.pdf</a></p>
         </div></div>
       </div>
 
       <div class="section-label">Night owls</div>
 
       <p class="day-intro">
-        <span data-lang="en">Already in Roma after Chava. Walk to Tlecān, El Bósforo, or Licorería Limantour.</span>
-        <span data-lang="es">Ya en Roma post-Chava. Caminar a Tlecān, El Bósforo, o Licorería Limantour.</span>
+        <span data-lang="en">Already in Roma Norte after Tlecan. Walk 5 min to Licorería Limantour or Diente de Oro. El Bósforo also nearby in Centro.</span>
+        <span data-lang="es">Ya en Roma Norte post-Tlecan. Caminar 5 min a Licorería Limantour o Diente de Oro. El Bósforo también cerca en Centro.</span>
       </p>
 
     </div></div>
@@ -1867,8 +2067,8 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
 
       <div class="callout">
-        <span data-lang="en"><strong>10-min grace period — they WILL give away your table.</strong> Confirmed via WhatsApp. 6 people, 5:30pm.</span>
-        <span data-lang="es"><strong>10-min grace period — te QUITAN la mesa.</strong> Confirmado via WhatsApp. 6 personas, 5:30pm.</span>
+        <span data-lang="en"><strong>10-min grace period — they WILL give away your table.</strong> Confirmed via WhatsApp. 6 people, 5:30pm. Business casual dress code.</span>
+        <span data-lang="es"><strong>10-min grace period — te QUITAN la mesa.</strong> Confirmado via WhatsApp. 6 personas, 5:30pm. Dress code business casual.</span>
       </div>
 
       <div class="place">
@@ -1886,6 +2086,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Calle Durango 200, Roma Norte</strong>Lun-Sáb 12pm-8pm · Dom 12pm-7pm · Cerrado lun · Solo comida</div>
           <p><span data-lang="en">The seafood institution. Tuna tostadas, red/green huachinango. 5:30pm means the whole afternoon is free.</span>
           <span data-lang="es">La institución de mariscos. Tostadas de atún, huachinango rojo/verde. 5:30pm significa que toda la tarde antes es libre.</span></p>
         </div></div>
@@ -1906,8 +2107,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">The guayaba cuernito. Go early-ish — they sell out.</span>
-          <span data-lang="es">El cuernito de guayaba. Ir temprano-ish — se acaban.</span></p>
+          <div class="place-address"><strong>Colima 179, Roma Norte</strong>Lun-Sáb 7am-10pm · Dom 7:30am-9:30pm<br>Also: Puebla 242</div>
+          <p><span data-lang="en">The guava cuernito. Go early-ish — they sell out. 5 min walk from Contramar.</span>
+          <span data-lang="es">El cuernito de guayaba. Ir temprano-ish — se acaban. 5 min caminando de Contramar.</span></p>
         </div></div>
       </div>
 
@@ -1917,14 +2119,21 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <div class="place-title-block">
             <div class="place-name">Maizajo</div>
             <div class="place-tag">
-              <span data-lang="en">Nixtamal-focused restaurant</span><span data-lang="es">Restaurante de nixtamal</span>
+              <span data-lang="en">Nixtamal restaurant · Michelin recommended</span>
+              <span data-lang="es">Restaurante de nixtamal · Michelin recommended</span>
             </div>
           </div>
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Serious intention around tortillas and masa. Good brunch option for the food-curious.</span>
-          <span data-lang="es">Intención seria alrededor de tortillas y masa. Buen brunch option para los food-curious.</span></p>
+          <div class="place-address"><strong>Fernando Montes de Oca 113, Condesa</strong>Mar-Sáb 1pm-11pm · Dom 1pm-6pm · Cerrado lun<br>+52 55 9197 9461 · Reserva vía CoverManager</div>
+          <p><span data-lang="en"><strong>Dual concept:</strong> Taquería downstairs (walk-in, standing, ~30 min wait) + full restaurant upstairs (reservation, sit-down, industrial chic). Michelin Guide 2024.</span>
+          <span data-lang="es"><strong>Concepto dual:</strong> Taquería abajo (walk-in, parados, ~30 min espera) + restaurante arriba (con reserva, sentados, industrial chic). Michelin Guide 2024.</span></p>
+          <p><strong><span data-lang="en">Must-orders:</span><span data-lang="es">Ordenar:</span></strong>
+          <span data-lang="en"> Taco Campechano con Rib Eye, Brisket Costra, Taco de Costilla con papas fritas, tostada de atún (upstairs), tamal de boda (upstairs).</span>
+          <span data-lang="es"> Taco Campechano con Rib Eye, Brisket Costra, Taco de Costilla con papas, tostada de atún (arriba), tamal de boda (arriba).</span></p>
+          <p><strong>Pro tip:</strong> <span data-lang="en">Reserve upstairs for 6, ask to bring tacos up from the taquería. Best of both worlds.</span>
+          <span data-lang="es">Reservar arriba para 6, pedir que suban tacos de la taquería. Best of both worlds.</span></p>
         </div></div>
       </div>
 
@@ -1940,8 +2149,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><span data-lang="en">Breakfast stalls, fresh produce.</span>
-          <span data-lang="es">Puestos de desayuno, producto fresco.</span></p>
+          <div class="place-address"><strong>Campeche 101, Roma Sur</strong>Lun-Dom 8am-8pm · Best before noon</div>
+          <p><span data-lang="en">Breakfast stalls, fresh produce. Less touristy than San Juan.</span>
+          <span data-lang="es">Puestos de desayuno, producto fresco. Menos turístico que San Juan.</span></p>
         </div></div>
       </div>
 
@@ -1956,7 +2166,11 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           </div>
           <span class="place-plus">+</span>
         </div>
-        <div class="place-body"><div class="place-body-inner"></div></div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Av. Nuevo León 115, Condesa</strong>Lun-Sáb 8am-11pm · Dom 9am-11pm</div>
+          <p><span data-lang="en">Bookstore + café in Condesa. Good coffee, interesting people, floor-to-ceiling shelves.</span>
+          <span data-lang="es">Librería + café en Condesa. Buen café, gente interesante, estantes hasta el techo.</span></p>
+        </div></div>
       </div>
 
       <div class="place">
@@ -1973,6 +2187,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Balderas s/n, Centro</strong>Lun-Sáb 10am-7pm · Dom 10am-6pm · ~10 min del hotel</div>
           <p><span data-lang="en">Oaxacan textiles, Talavera, alebrijes, silver. Bring cash. Also walkable from hotel any morning.</span>
           <span data-lang="es">Textiles oaxaqueños, Talavera, alebrijes, plata. Traer efectivo. También caminando desde hotel cualquier mañana.</span></p>
         </div></div>
@@ -1988,11 +2203,14 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-emoji">🌳</span>
           <div class="place-title-block">
             <div class="place-name">Parque España / Parque México</div>
-            <div class="place-tag">Walk it off</div>
+            <div class="place-tag">Walk it off · Condesa</div>
           </div>
           <span class="place-plus">+</span>
         </div>
-        <div class="place-body"><div class="place-body-inner"></div></div>
+        <div class="place-body"><div class="place-body-inner">
+          <p><span data-lang="en">Two linked parks in Condesa. Art deco, dogs, benches. ~5 min walking from Contramar/Rosetta.</span>
+          <span data-lang="es">Dos parques conectados en Condesa. Art deco, perros, bancas. ~5 min caminando de Contramar/Rosetta.</span></p>
+        </div></div>
       </div>
 
       <div class="place">
@@ -2004,14 +2222,18 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           </div>
           <span class="place-plus">+</span>
         </div>
-        <div class="place-body"><div class="place-body-inner"></div></div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Varias sucursales · Roma: Orizaba 42</strong>Lun-Sáb 8am-8pm · Dom 9am-6pm</div>
+          <p><span data-lang="en">Best specialty coffee roaster in CDMX. Consistent, good in any branch.</span>
+          <span data-lang="es">El mejor roaster de specialty de CDMX. Consistente, bueno en cualquier sucursal.</span></p>
+        </div></div>
       </div>
 
       <div class="section-label">Night owls</div>
 
       <p class="day-intro">
-        <span data-lang="en">Roma/Condesa is alive on Thursday nights. Bar-hop: Licorería Limantour → Tlecān → Diente de Oro. Tap out at a reasonable hour (Lorde tomorrow).</span>
-        <span data-lang="es">Roma/Condesa está viva los jueves. Bar-hop: Licorería Limantour → Tlecān → Diente de Oro. Tap out at a reasonable hour (Lorde mañana).</span>
+        <span data-lang="en">Roma/Condesa alive on Thursday nights. Bar-hop: Licorería Limantour → Tlecān → Diente de Oro. Tap out at a reasonable hour (Lorde tomorrow).</span>
+        <span data-lang="es">Roma/Condesa viva los jueves. Bar-hop: Licorería Limantour → Tlecān → Diente de Oro. Tap out at a reasonable hour (Lorde mañana).</span>
       </p>
 
     </div></div>
@@ -2054,7 +2276,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-emoji">🏛</span>
           <div class="place-title-block">
             <div class="place-name">
-              <span data-lang="en">Guided tour · 4 people</span><span data-lang="es">Tour guiado · 4 personas</span>
+              <span data-lang="en">Teotihuacán · guided tour</span><span data-lang="es">Teotihuacán · tour guiado</span>
             </div>
             <div class="place-tag">
               <span data-lang="en">English guide recommended</span>
@@ -2067,14 +2289,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>San Juan Teotihuacán, Estado de México</strong>Diario 8am-5pm · $85 MXN entry · 45 km NE of CDMX</div>
           <p><strong><span data-lang="en">Recommended:</span><span data-lang="es">Recomendado:</span></strong>
           <span data-lang="en"> guided tour with transport (~$30-60 USD/person, Viator/GetYourGuide).</span>
           <span data-lang="es"> tour guiado con transporte (~$30-60 USD/persona, Viator/GetYourGuide).</span></p>
           <p><strong>Alt:</strong> <span data-lang="en">Bus from Terminal de Autobuses del Norte, every 15-30 min, ~1-1.5 hrs, ~$100 MXN round trip.</span>
           <span data-lang="es">Bus desde Terminal de Autobuses del Norte, cada 15-30 min, ~1-1.5 hrs, ~$100 MXN round trip.</span></p>
-          <p>⏰ <span data-lang="en">Site open 8am-5pm · $85 MXN entry</span>
-          <span data-lang="es">Sitio abierto 8am-5pm · $85 MXN entrada</span></p>
-          <p>⚠️ <span data-lang="en">Sun and Moon pyramids may be closed for climbing. Verify.</span>
+          <p>⚠️ <span data-lang="en">Sun and Moon pyramids may be closed for climbing. Verify before.</span>
           <span data-lang="es">Pirámides Sol y Luna pueden estar cerradas. Verificar.</span></p>
           <p>☀️ <span data-lang="en">Bring: water, sunscreen, hat, good shoes.</span>
           <span data-lang="es">Llevar: agua, bloqueador, sombrero, buenos zapatos.</span></p>
@@ -2087,10 +2308,32 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 
       <div class="place">
         <div class="place-header">
+          <span class="place-emoji">🌅</span>
+          <div class="place-title-block">
+            <div class="place-name">
+              <span data-lang="en">El Hidalguense · barbacoa breakfast</span>
+              <span data-lang="es">El Hidalguense · desayuno de barbacoa</span>
+            </div>
+            <div class="place-tag">
+              <span data-lang="en">Best barbacoa in CDMX · wildcard</span>
+              <span data-lang="es">Mejor barbacoa de CDMX · wildcard</span>
+            </div>
+          </div>
+          <span class="place-plus">+</span>
+        </div>
+        <div class="place-body"><div class="place-body-inner">
+          <div class="place-address"><strong>Campeche 155, Roma Sur</strong>Vie-Dom 7am-6pm · Llegar antes del mediodía</div>
+          <p><span data-lang="en">Arguably the best barbacoa in CDMX. Lamb slow-cooked overnight, consomé, tortillas. Weekend-only. Arrive before noon — it sells out.</span>
+          <span data-lang="es">Posiblemente la mejor barbacoa de la CDMX. Borrego cocido de noche, consomé, tortillas. Solo fines de semana. Llegar antes del mediodía — se acaba.</span></p>
+        </div></div>
+      </div>
+
+      <div class="place">
+        <div class="place-header">
           <span class="place-emoji">☕</span>
           <div class="place-title-block">
             <div class="place-name">
-              <span data-lang="en">Morning · sleep in</span><span data-lang="es">Mañana · sleep in</span>
+              <span data-lang="en">Morning · sleep in + coffee</span><span data-lang="es">Mañana · sleep in + café</span>
             </div>
             <div class="place-tag">
               <span data-lang="en">Light day, save energy for concert</span>
@@ -2130,9 +2373,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
           <span class="place-plus">+</span>
         </div>
         <div class="place-body"><div class="place-body-inner">
-          <p><strong>Palacio de los Deportes, 8:00pm.</strong></p>
-          <p><span data-lang="en">East side of the city. Uber from hotel ~20-35 min. <strong>Leave by 6:30pm.</strong></span>
-          <span data-lang="es">Lado este de la ciudad. Uber desde el hotel ~20-35 min. <strong>Salir a las 6:30pm.</strong></span></p>
+          <div class="place-address"><strong>Palacio de los Deportes · Av. Río Churubusco, Granjas México, Iztacalco</strong>Fri May 1 · 8:00pm · East side of city</div>
+          <p><span data-lang="en">Uber from hotel ~20-35 min. <strong>Leave by 6:30pm.</strong></span>
+          <span data-lang="es">Uber desde el hotel ~20-35 min. <strong>Salir a las 6:30pm.</strong></span></p>
         </div></div>
       </div>
 
@@ -2157,15 +2400,12 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🏛</span>
       <div class="place-title-block">
         <div class="place-name">Palacio de Bellas Artes</div>
-        <div class="place-tag">
-          <span data-lang="en">Recital · Sun 26 · ~midday</span><span data-lang="es">Recital · Dom 26 · ~mediodía</span>
-        </div>
+        <div class="place-tag">Av. Juárez s/n · Recital Sun 26</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Tickets in hand. Arrive 15-20 min early.</span>
-      <span data-lang="es">Tickets in hand. Llegar 15-20 min antes.</span></p>
+      <div class="place-address"><strong>Av. Juárez s/n, Centro</strong>Mar-Dom 11am-5pm · Exterior gratis 24h · Cerrado lun</div>
     </div></div>
   </div>
 
@@ -2185,8 +2425,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">50+ taquerías, 7 hours of tacos. Register at acceso.chilango.com.</span>
-      <span data-lang="es">50+ taquerías, 7 horas de tacos. Registrar en acceso.chilango.com.</span></p>
+      <div class="place-address"><strong>Plaza de la República, Tabacalera</strong>50+ taquerías · acceso.chilango.com</div>
     </div></div>
   </div>
 
@@ -2194,13 +2433,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
     <div class="place-header">
       <span class="place-emoji">🎨</span>
       <div class="place-title-block">
-        <div class="place-name">Palacio Nacional · <span data-lang="en">Rivera murals</span><span data-lang="es">murales Rivera</span></div>
-        <div class="place-tag">Zócalo · <span data-lang="en">free</span><span data-lang="es">gratis</span></div>
+        <div class="place-name">Palacio Nacional · Rivera murals</div>
+        <div class="place-tag">Zócalo · gratis con INE</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Staircase murals are non-optional.</span><span data-lang="es">Los murales de la escalera son no-opcionales.</span></p>
+      <div class="place-address"><strong>Plaza de la Constitución, Centro</strong>Mar-Dom 10am-5pm · Gratis con INE/pasaporte</div>
     </div></div>
   </div>
 
@@ -2210,14 +2449,32 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">Gran Hotel Ciudad de México</div>
         <div class="place-tag">
-          <span data-lang="en">Tiffany cupola · free</span><span data-lang="es">Cúpula Tiffany · gratis</span>
+          <span data-lang="en">Tiffany cupola · free 24h</span><span data-lang="es">Cúpula Tiffany · gratis 24h</span>
         </div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Walk in, look up. 2 min from Zócalo.</span>
-      <span data-lang="es">Entrar al lobby, mirar arriba. 2 min del Zócalo.</span></p>
+      <div class="place-address"><strong>16 de Septiembre 82, Centro</strong>Lobby abierto 24h · Gratis</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🏛</span>
+      <div class="place-title-block">
+        <div class="place-name">Palacio de Iturbide · Fomento Banamex</div>
+        <div class="place-tag">
+          <span data-lang="en">Colonial courtyard · art exhibits · free</span>
+          <span data-lang="es">Patio colonial · exposiciones · gratis</span>
+        </div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Madero 17, Centro</strong>Lun-Dom 10am-7pm · Gratis · Tours 12/2/4pm</div>
+      <p><span data-lang="en">18th-century colonial courtyard, rotating art exhibitions. Hidden gem — most tourists miss it.</span>
+      <span data-lang="es">Patio colonial s. XVIII con exposiciones rotativas. Hidden gem — mayoría de turistas lo ignora.</span></p>
     </div></div>
   </div>
 
@@ -2233,8 +2490,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">5 min from Bellas Artes.</span>
-      <span data-lang="es">5 min de Bellas Artes.</span></p>
+      <div class="place-address"><strong>Tacuba 1, esq. Eje Central, Centro</strong>Lun-Vie 8am-8pm · Sáb 9am-3pm</div>
     </div></div>
   </div>
 
@@ -2250,7 +2506,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Seminario 8, Centro</strong>Mar-Dom 9am-5pm · $90 MXN</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2264,7 +2522,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Eje Central 2, esq. Madero, Centro</strong>Lun-Dom 10am-10pm · Piso 44</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2273,14 +2533,14 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">MiBIMBO</div>
         <div class="place-tag">
-          <span data-lang="en">Interactive · Fri-Sun · closed Mon</span>
-          <span data-lang="es">Interactivo · Fri-Sun · cerrado lun</span>
+          <span data-lang="en">Interactive · closed Mon</span>
+          <span data-lang="es">Interactivo · cerrado lun</span>
         </div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p>Isabel La Católica 51, 8 min. ~$100 MXN / $120 intl.</p>
+      <div class="place-address"><strong>Isabel La Católica 51, Centro</strong>Mar-Jue 9am-6pm · Vie-Dom 10am-7pm · $100 MXN</div>
     </div></div>
   </div>
 
@@ -2295,7 +2555,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Ernesto Pugibet 21, Centro</strong>Lun-Dom 7am-5pm</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2310,8 +2572,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Oaxacan textiles, Talavera, alebrijes, silver.</span>
-      <span data-lang="es">Textiles oaxaqueños, Talavera, alebrijes, plata.</span></p>
+      <div class="place-address"><strong>Balderas s/n, Centro</strong>Lun-Sáb 10am-7pm · Dom 10am-6pm</div>
     </div></div>
   </div>
 
@@ -2319,7 +2580,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
     <div class="place-header">
       <span class="place-emoji">🌮</span>
       <div class="place-title-block">
-        <div class="place-name">El Huequito · Los Cocuyos · El Califa de León</div>
+        <div class="place-name">El Huequito · Los Cocuyos · El Califa</div>
         <div class="place-tag">
           <span data-lang="en">Iconic tacos</span><span data-lang="es">Tacos icónicos</span>
         </div>
@@ -2327,8 +2588,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Huequito: al pastor originator. Cocuyos: late-night suadero/buche, cash only. Califa de León: Michelin-starred.</span>
-      <span data-lang="es">Huequito: originador del pastor. Cocuyos: suadero/buche late-night, solo efectivo. Califa de León: Michelin-starred.</span></p>
+      <p><strong>El Huequito:</strong> Ayuntamiento 21, Centro · Lun-Sáb 11am-11pm</p>
+      <p><strong>Los Cocuyos:</strong> Bolívar 54, Centro · Diario 10am-5am · cash only</p>
+      <p><strong>El Califa de León:</strong> Ribera de San Cosme 56, San Rafael · Michelin-starred</p>
     </div></div>
   </div>
 
@@ -2344,8 +2606,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">La Ideal: since 1927, 6:30am-9pm. Bisquets Obregón: pan dulce, café de olla, enmoladas. El Cardenal: exceptional bakery counter.</span>
-      <span data-lang="es">La Ideal: desde 1927, 6:30am-9pm. Bisquets Obregón: pan dulce, café de olla, enmoladas. El Cardenal: bakery counter excepcional.</span></p>
+      <p><strong>La Ideal:</strong> 16 de Septiembre 18 · Lun-Dom 6:30am-9pm · since 1927</p>
+      <p><strong>Bisquets Obregón:</strong> Madero 81, Centro · Lun-Dom 7am-11pm</p>
+      <p><strong>El Cardenal:</strong> Palma 23, Centro · Lun-Dom 8am-6pm</p>
     </div></div>
   </div>
 
@@ -2361,8 +2624,23 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">La Opera: Pancho Villa's bullet hole. Corona: old-school. Duelistas: pulquería, curados.</span>
-      <span data-lang="es">La Opera: bullet hole de Pancho Villa. Corona: old-school. Duelistas: pulquería, curados.</span></p>
+      <p><strong>La Opera:</strong> 5 de Mayo 10 · Lun-Sáb 1pm-12am · Pancho Villa's bullet hole</p>
+      <p><strong>Salón Corona:</strong> Bolívar 24 · Lun-Dom 11am-1am · old-school</p>
+      <p><strong>Las Duelistas:</strong> Aranda 30 · Lun-Sáb 11am-10pm · curados</p>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🥃</span>
+      <div class="place-title-block">
+        <div class="place-name">El Bósforo</div>
+        <div class="place-tag">Mezcal cantina</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Luis Moya 31, Centro</strong>Lun-Sáb 5pm-2am · Small, local</div>
     </div></div>
   </div>
 
@@ -2371,25 +2649,31 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🎶</span>
       <div class="place-title-block">
         <div class="place-name">Salón Tenampa · Garibaldi</div>
-        <div class="place-tag">Mariachi plaza · ~15 min</div>
+        <div class="place-tag">Mariachi plaza</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Plaza Garibaldi 12, Centro</strong>Lun-Dom 1pm-3am</div>
+    </div></div>
   </div>
 
   <div class="place">
     <div class="place-header">
       <span class="place-emoji">🍽</span>
       <div class="place-title-block">
-        <div class="place-name">Café de Tacuba · Sanborns de los Azulejos · Casa de Toño</div>
+        <div class="place-name">Café de Tacuba · Sanborns Azulejos · Casa de Toño</div>
         <div class="place-tag">
           <span data-lang="en">Classic dinners</span><span data-lang="es">Clásicos para cenar</span>
         </div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <p><strong>Café de Tacuba:</strong> Tacuba 28 · Lun-Dom 8am-11:30pm · since 1912</p>
+      <p><strong>Sanborns Azulejos:</strong> Madero 4 · Lun-Dom 7am-1am</p>
+      <p><strong>Casa de Toño:</strong> Varias sucursales · Lun-Dom 24h</p>
+    </div></div>
   </div>
 
   <!-- CHAPULTEPEC / POLANCO -->
@@ -2402,13 +2686,12 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🏛</span>
       <div class="place-title-block">
         <div class="place-name">Museo Nacional de Antropología</div>
-        <div class="place-tag">Tue-Sun 9am-6pm · $105-210 MXN</div>
+        <div class="place-tag">Paseo de la Reforma · Chapultepec</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Aztec, Maya, Olmec, Zapotec. Bilingual signage.</span>
-      <span data-lang="es">Azteca, Maya, Olmeca, Zapoteca. Signage bilingüe.</span></p>
+      <div class="place-address"><strong>Av. Paseo de la Reforma s/n, Chapultepec Polanco</strong>Mar-Dom 9am-6pm · $105-210 MXN</div>
     </div></div>
   </div>
 
@@ -2417,14 +2700,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🍽</span>
       <div class="place-title-block">
         <div class="place-name">Sala Gastronómica</div>
-        <div class="place-tag">
-          <span data-lang="en">Inside Antropología · Chef Alberto Molina</span>
-          <span data-lang="es">Dentro de Antropología · Chef Alberto Molina</span>
-        </div>
+        <div class="place-tag">Inside Antropología</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Inside Museo Antropología main floor</strong>Mar-Dom 9am-5pm · OpenTable</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2432,11 +2714,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🏰</span>
       <div class="place-title-block">
         <div class="place-name">Castillo de Chapultepec</div>
-        <div class="place-tag">Tue-Sun 9am-5pm · ~$95 MXN</div>
+        <div class="place-tag">Bosque de Chapultepec</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Bosque de Chapultepec Primera Sección</strong>Mar-Dom 9am-5pm · ~$95 MXN</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2444,15 +2728,12 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🖼</span>
       <div class="place-title-block">
         <div class="place-name">MAM · Museo de Arte Moderno</div>
-        <div class="place-tag">
-          <span data-lang="en">Gelman + Remedios Varo</span>
-          <span data-lang="es">Gelman + Remedios Varo</span>
-        </div>
+        <div class="place-tag">Gelman + Remedios Varo</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p>Tue-Sun 10:15am-5:15pm · ~$85 MXN.</p>
+      <div class="place-address"><strong>Paseo de la Reforma s/n, Bosque de Chapultepec</strong>Mar-Dom 10:15am-5:15pm · ~$85 MXN</div>
     </div></div>
   </div>
 
@@ -2462,14 +2743,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">Galería Consigna · Leonora Carrington</div>
         <div class="place-tag">
-          <span data-lang="en">Through May 23 · book free slot</span>
-          <span data-lang="es">Hasta 23 may · reservar slot gratis</span>
+          <span data-lang="en">Through May 23</span><span data-lang="es">Hasta 23 mayo</span>
         </div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p>consigna.site.agendapro.com</p>
+      <p>Reservar en consigna.site.agendapro.com</p>
     </div></div>
   </div>
 
@@ -2478,14 +2758,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🏛</span>
       <div class="place-title-block">
         <div class="place-name">Museo Soumaya</div>
-        <div class="place-tag">
-          <span data-lang="en">Daily 10:30am-6:30pm · free</span>
-          <span data-lang="es">Daily 10:30am-6:30pm · gratis</span>
-        </div>
+        <div class="place-tag">Free · Plaza Carso, Polanco</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Blvd. Cervantes Saavedra 303, Granada</strong>Diario 10:30am-6:30pm · Gratis</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2497,7 +2776,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Blvd. Cervantes Saavedra 303, Granada</strong>Lun-Dom 7am-10pm · Plaza Carso</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2509,7 +2790,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <p>Scotch Malt Whisky Society partner. Confirmar dirección actual.</p>
+    </div></div>
   </div>
 
   <!-- JUÁREZ / ROMA / CONDESA -->
@@ -2523,8 +2806,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">Handshake Speakeasy</div>
         <div class="place-tag">
-          <span data-lang="en">Amberes 65, Juárez · door #13</span>
-          <span data-lang="es">Amberes 65, Juárez · puerta #13</span>
+          Amberes 65, Juárez · puerta #13
           <span class="status-badge status-confirmed">
             <span data-lang="en">Booked</span><span data-lang="es">Confirmado</span>
           </span>
@@ -2533,8 +2815,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Tue Apr 28 · 9pm · 6 people. 90-min seated.</span>
-      <span data-lang="es">Mar 28 · 9pm · 6 personas. 90-min seated.</span></p>
+      <div class="place-address"><strong>Amberes 65, Juárez</strong>Lun-Sáb 6pm-2am · Reserva obligatoria</div>
     </div></div>
   </div>
 
@@ -2544,7 +2825,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">Contramar</div>
         <div class="place-tag">
-          Calle Durango 200, Roma Norte
+          Durango 200, Roma Norte
           <span class="status-badge status-confirmed">
             <span data-lang="en">Booked</span><span data-lang="es">Confirmado</span>
           </span>
@@ -2553,8 +2834,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Thu Apr 30 · 5:30pm · 6 people. 10-min grace period.</span>
-      <span data-lang="es">Jue 30 · 5:30pm · 6 personas. 10-min grace period.</span></p>
+      <div class="place-address"><strong>Calle Durango 200, Roma Norte</strong>Lun-Sáb 12pm-8pm · Dom 12pm-7pm · Cerrado lun</div>
     </div></div>
   </div>
 
@@ -2562,9 +2842,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
     <div class="place-header">
       <span class="place-emoji">🦐</span>
       <div class="place-title-block">
-        <div class="place-name">Mi Compa Chava</div>
+        <div class="place-name">Mi Compa Chava (2 sucursales)</div>
         <div class="place-tag">
-          Zacatecas 172, Roma
+          Roma + Coyoacán
           <span class="status-badge status-pending">
             <span data-lang="en">DM pending</span><span data-lang="es">DM pendiente</span>
           </span>
@@ -2573,7 +2853,25 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p>Tue-Sun 12pm-8pm. DM @micompachava IG.</p>
+      <p><strong>Roma:</strong> Zacatecas 172, Roma Norte · more crowded</p>
+      <p><strong>Coyoacán:</strong> Pdte. V. Carranza 109, esq. Felipe Carrillo Puerto · less crowded ⭐</p>
+      <p>Mar-Dom 12pm-8pm · Cerrado lun · DM @micompachava IG</p>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🍸</span>
+      <div class="place-title-block">
+        <div class="place-name">Tlecan</div>
+        <div class="place-tag">Mezcal cantina · Roma Norte</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Av. Álvaro Obregón 228, Roma Norte</strong>Lun-Dom 6pm-2am · Walk-in</div>
+      <p><span data-lang="en">Serious mezcal by state. Locals prefer over Handshake.</span>
+      <span data-lang="es">Mezcales por estado. Los chilangos lo prefieren sobre Handshake.</span></p>
     </div></div>
   </div>
 
@@ -2586,7 +2884,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Colima 179, Roma Norte</strong>Lun-Sáb 7am-10pm · Dom 7:30am-9:30pm</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2594,13 +2894,46 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🌽</span>
       <div class="place-title-block">
         <div class="place-name">Maizajo</div>
+        <div class="place-tag">Nixtamal · Michelin Guide</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Fernando Montes de Oca 113, Condesa</strong>Mar-Sáb 1pm-11pm · Dom 1pm-6pm · +52 55 9197 9461</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🌅</span>
+      <div class="place-title-block">
+        <div class="place-name">El Hidalguense · barbacoa</div>
         <div class="place-tag">
-          <span data-lang="en">Nixtamal-focused</span><span data-lang="es">Nixtamal-focused</span>
+          <span data-lang="en">Best barbacoa in CDMX · weekends only</span>
+          <span data-lang="es">Mejor barbacoa · solo fds</span>
         </div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Campeche 155, Roma Sur</strong>Vie-Dom 7am-6pm · Arrive before noon</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🍽</span>
+      <div class="place-title-block">
+        <div class="place-name">Fonda Fina</div>
+        <div class="place-tag">Chef Juan Cabrera · Roma</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Medellín 79, Roma Norte</strong>Mar-Jue 1:30pm-11pm · Vie-Sáb 1:30pm-12am · Dom 1:30pm-6pm</div>
+      <p><span data-lang="en">Modern Mexican, regional focus. Vegetables as good as the meat.</span>
+      <span data-lang="es">Mexicana moderna, enfoque regional. Verduras tan buenas como la carne.</span></p>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2608,13 +2941,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🏪</span>
       <div class="place-title-block">
         <div class="place-name">Mercado Medellín</div>
-        <div class="place-tag">
-          <span data-lang="en">Neighborhood market</span><span data-lang="es">Mercado de barrio</span>
-        </div>
+        <div class="place-tag">Neighborhood market</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Campeche 101, Roma Sur</strong>Lun-Dom 8am-8pm · Best before noon</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2622,13 +2955,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">📚</span>
       <div class="place-title-block">
         <div class="place-name">Cafébrería El Péndulo</div>
-        <div class="place-tag">
-          <span data-lang="en">Bookstore + café · Condesa</span><span data-lang="es">Librería + café · Condesa</span>
-        </div>
+        <div class="place-tag">Bookstore + café · Condesa</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Av. Nuevo León 115, Condesa</strong>Lun-Sáb 8am-11pm · Dom 9am-11pm</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2636,9 +2969,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🌳</span>
       <div class="place-title-block">
         <div class="place-name">Parque España / Parque México</div>
-        <div class="place-tag">
-          <span data-lang="en">Condesa walking</span><span data-lang="es">Condesa walking</span>
-        </div>
+        <div class="place-tag">Condesa walking</div>
       </div>
       <span class="place-plus">+</span>
     </div>
@@ -2654,21 +2985,37 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Varias sucursales · Roma: Orizaba 42</strong>Lun-Sáb 8am-8pm</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🥃</span>
+      <div class="place-title-block">
+        <div class="place-name">Cantina El Centenario</div>
+        <div class="place-tag">Authentic cantina · Condesa</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Vicente Suárez 42, Condesa</strong>Lun-Mié 12pm-12am · Jue-Sáb 12pm-2am</div>
+    </div></div>
   </div>
 
   <div class="place">
     <div class="place-header">
       <span class="place-emoji">🍸</span>
       <div class="place-title-block">
-        <div class="place-name">Limantour · Tlecān · Diente de Oro · Bósforo</div>
-        <div class="place-tag">Bar belt · Roma</div>
+        <div class="place-name">Limantour · Diente de Oro</div>
+        <div class="place-tag">Bar belt · Roma Norte</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Limantour: world-class cocktails. Tlecān: mezcal. Diente de Oro: cocktail + vibe. Bósforo: small mezcal cantina.</span>
-      <span data-lang="es">Limantour: world-class cocteles. Tlecān: mezcal. Diente de Oro: cóctel + vibe. Bósforo: mezcalería pequeña.</span></p>
+      <p><strong>Licorería Limantour:</strong> Álvaro Obregón 106 · Lun-Dom 6pm-2am · World's 50 Best</p>
+      <p><strong>Diente de Oro:</strong> Orizaba 59 · Whisky destination</p>
     </div></div>
   </div>
 
@@ -2692,8 +3039,24 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">4 General + 2 Residentes. Includes Museo Anahuacalli.</span>
-      <span data-lang="es">4 General + 2 Residentes. Incluye Museo Anahuacalli.</span></p>
+      <div class="place-address"><strong>Londres 247, Del Carmen, Coyoacán</strong>Mié 11am-6pm</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🦐</span>
+      <div class="place-title-block">
+        <div class="place-name">Mi Compa Chava · Coyoacán</div>
+        <div class="place-tag">
+          <span data-lang="en">Less busy than Roma branch</span>
+          <span data-lang="es">Menos saturada que Roma</span>
+        </div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Pdte. V. Carranza 109, esq. F. Carrillo Puerto, Coyoacán</strong>Mar-Dom 12pm-8pm · 10 min walk de Jardín Centenario</div>
     </div></div>
   </div>
 
@@ -2702,13 +3065,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🌳</span>
       <div class="place-title-block">
         <div class="place-name">Barrio de Coyoacán</div>
-        <div class="place-tag">
-          <span data-lang="en">Plazas, market, elotes</span><span data-lang="es">Plazas, mercado, elotes</span>
-        </div>
+        <div class="place-tag">Plazas + mercado + elotes</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Jardín Centenario + Jardín Hidalgo</strong>Always open · Walkable</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2716,29 +3079,41 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">☕</span>
       <div class="place-title-block">
         <div class="place-name">Café Avellaneda</div>
-        <div class="place-tag">
-          <span data-lang="en">Single-origin · serious baristas</span>
-          <span data-lang="es">Single-origin · baristas serios</span>
-        </div>
+        <div class="place-tag">Single-origin · baristas serios</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Higuera 40-A, Del Carmen, Coyoacán</strong>Lun-Vie 8am-8pm · Sáb-Dom 9am-8pm</div>
+    </div></div>
   </div>
 
   <div class="place">
     <div class="place-header">
       <span class="place-emoji">🍽</span>
       <div class="place-title-block">
-        <div class="place-name">Los Danzantes · Casa del Indio Fernández</div>
-        <div class="place-tag">
-          <span data-lang="en">Mezcal + colonial courtyards</span>
-          <span data-lang="es">Mezcal + patios coloniales</span>
-        </div>
+        <div class="place-name">Los Danzantes</div>
+        <div class="place-tag">Mezcal + patio colonial</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Plaza Jardín Centenario 12, Coyoacán</strong>Lun-Dom 1pm-11pm</div>
+    </div></div>
+  </div>
+
+  <div class="place">
+    <div class="place-header">
+      <span class="place-emoji">🥃</span>
+      <div class="place-title-block">
+        <div class="place-name">Casa del Indio Fernández</div>
+        <div class="place-tag">Mezcal · patio atmosférico</div>
+      </div>
+      <span class="place-plus">+</span>
+    </div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Ignacio Zaragoza 57, Del Carmen, Coyoacán</strong>Mar-Dom 1pm-11pm</div>
+    </div></div>
   </div>
 
   <!-- XOCHIMILCO -->
@@ -2759,8 +3134,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Periférico Sur S/N, Col. Barrio 18. Bonus: plant market next door.</span>
-      <span data-lang="es">Periférico Sur S/N, Col. Barrio 18. Bonus: Mercado de Plantas al lado.</span></p>
+      <div class="place-address"><strong>Periférico Sur s/n, Col. Barrio 18, Xochimilco</strong>Diario 8am-5pm · Mercado de Plantas al lado</div>
     </div></div>
   </div>
 
@@ -2768,9 +3142,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
     <div class="place-header">
       <span class="place-emoji">🪆</span>
       <div class="place-title-block">
-        <div class="place-name">
-          <span data-lang="en">Isla Teshuilo (Dolls)</span><span data-lang="es">Isla Teshuilo (Muñecas)</span>
-        </div>
+        <div class="place-name">Isla Teshuilo (Dolls)</div>
         <div class="place-tag">$70 MXN</div>
       </div>
       <span class="place-plus">+</span>
@@ -2794,14 +3166,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🧅</span>
       <div class="place-title-block">
         <div class="place-name">La Merced</div>
-        <div class="place-tag">
-          <span data-lang="en">Giant · daytime</span>
-          <span data-lang="es">Gigante · daytime</span>
-        </div>
+        <div class="place-tag">Giant · daytime</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Rosario 132, La Merced Balbuena</strong>Lun-Dom 6am-6pm · Metro Merced</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2809,13 +3180,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🌸</span>
       <div class="place-title-block">
         <div class="place-name">Mercado de Jamaica</div>
-        <div class="place-tag">
-          <span data-lang="en">Flowers</span><span data-lang="es">Flores</span>
-        </div>
+        <div class="place-tag">Flores</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Guillermo Prieto 45, Jamaica</strong>Lun-Dom 24h · Mejor antes 8am</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2823,14 +3194,13 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🔮</span>
       <div class="place-title-block">
         <div class="place-name">Mercado de Sonora</div>
-        <div class="place-tag">
-          <span data-lang="en">Herbs, curanderas</span>
-          <span data-lang="es">Hierbas, curanderas</span>
-        </div>
+        <div class="place-tag">Hierbas, curanderas</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Av. Fray Servando Teresa de Mier 419, Merced Balbuena</strong>Lun-Dom 9am-7pm</div>
+    </div></div>
   </div>
 
   <div class="place">
@@ -2838,22 +3208,18 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">📖</span>
       <div class="place-title-block">
         <div class="place-name">Biblioteca Vasconcelos</div>
-        <div class="place-tag">
-          <span data-lang="en">Buenavista · free · open Mon</span>
-          <span data-lang="es">Buenavista · gratis · abierta lun</span>
-        </div>
+        <div class="place-tag">Buenavista · gratis · abierta lun</div>
       </div>
       <span class="place-plus">+</span>
     </div>
-    <div class="place-body"><div class="place-body-inner"></div></div>
+    <div class="place-body"><div class="place-body-inner">
+      <div class="place-address"><strong>Eje 1 Norte Mosqueta, Buenavista</strong>Lun-Dom 8:30am-7:30pm · Gratis</div>
+    </div></div>
   </div>
 
   <!-- FUERA -->
   <div class="zone-header">
     <span data-lang="en">Outside CDMX</span><span data-lang="es">Fuera de CDMX</span>
-    <span class="zone-count">
-      <span data-lang="en">full day</span><span data-lang="es">día completo</span>
-    </span>
   </div>
 
   <div class="place">
@@ -2862,8 +3228,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <div class="place-title-block">
         <div class="place-name">Teotihuacán</div>
         <div class="place-tag">
-          <span data-lang="en">Fri May 1 · split group</span>
-          <span data-lang="es">Vie 1 May · grupo split</span>
+          Fri May 1 · 4 people
           <span class="status-badge status-pending">
             <span data-lang="en">Pending</span><span data-lang="es">Pendiente</span>
           </span>
@@ -2872,8 +3237,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Open 365 days. 8am-5pm, $85 MXN. Guided tour with transport + English guide recommended.</span>
-      <span data-lang="es">Abierto 365 días. 8am-5pm, $85 MXN. Tour guiado con transporte + guía inglés recomendado.</span></p>
+      <div class="place-address"><strong>San Juan Teotihuacán, Estado de México</strong>Diario 8am-5pm · $85 MXN</div>
     </div></div>
   </div>
 
@@ -2887,16 +3251,12 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span class="place-emoji">🎵</span>
       <div class="place-title-block">
         <div class="place-name">Palacio de los Deportes · Lorde</div>
-        <div class="place-tag">
-          <span data-lang="en">Ultrasound Tour · leave 6:30pm</span>
-          <span data-lang="es">Ultrasound Tour · salir 6:30pm</span>
-        </div>
+        <div class="place-tag">Ultrasound Tour</div>
       </div>
       <span class="place-plus">+</span>
     </div>
     <div class="place-body"><div class="place-body-inner">
-      <p><span data-lang="en">Uber from hotel ~20-35 min.</span>
-      <span data-lang="es">Uber desde el hotel ~20-35 min.</span></p>
+      <div class="place-address"><strong>Av. Río Churubusco, Granjas México, Iztacalco</strong>Fri May 1 · 8pm · Leave hotel 6:30pm</div>
     </div></div>
   </div>
 
@@ -2916,8 +3276,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span data-lang="es">Mié 29 Abr · 12:00pm · 6 tickets</span>
     </div>
     <div class="res-details">
-      <span data-lang="en">4 <strong>Entrada General</strong> ($320 MXN) + 2 <strong>Residentes Nacionales</strong> ($160 MXN). Includes Museo Anahuacalli (Diego Rivera). <strong>Save confirmation emails for entry.</strong></span>
-      <span data-lang="es">4 <strong>Entrada General</strong> ($320 MXN) + 2 <strong>Residentes Nacionales</strong> ($160 MXN). Incluye Museo Anahuacalli (Diego Rivera). <strong>Guardar emails de confirmación para entrada.</strong></span>
+      <strong>Londres 247, Del Carmen, Coyoacán</strong><br>
+      <span data-lang="en">4 <strong>Entrada General</strong> ($320 MXN) + 2 <strong>Residentes Nacionales</strong> ($160 MXN). Includes Museo Anahuacalli. <strong>Save confirmation emails for entry.</strong></span>
+      <span data-lang="es">4 <strong>Entrada General</strong> ($320 MXN) + 2 <strong>Residentes Nacionales</strong> ($160 MXN). Incluye Museo Anahuacalli. <strong>Guardar emails de confirmación.</strong></span>
     </div>
   </div>
 
@@ -2928,8 +3289,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span data-lang="es">Jue 30 Abr · 5:30pm · 6 personas</span>
     </div>
     <div class="res-details">
-      <span data-lang="en">Confirmed via WhatsApp. Calle Durango 200, Roma Norte. ⏰ Closes 8pm. <strong>10-min grace period — they give away the table.</strong></span>
-      <span data-lang="es">Confirmado via WhatsApp. Calle Durango 200, Roma Norte. ⏰ Cierra 8pm. <strong>10-min grace period — te quitan la mesa.</strong></span>
+      <strong>Calle Durango 200, Roma Norte</strong><br>
+      <span data-lang="en">Confirmed via WhatsApp. Closes 8pm. <strong>10-min grace period — they give away the table.</strong></span>
+      <span data-lang="es">Confirmado via WhatsApp. Cierra 8pm. <strong>10-min grace period — te quitan la mesa.</strong></span>
     </div>
   </div>
 
@@ -2940,8 +3302,9 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span data-lang="es">Mar 28 Abr · 9:00pm · 6 personas</span>
     </div>
     <div class="res-details">
-      <span data-lang="en">Confirmed via email. Credit card guarantee required. <strong>$250 MXN penalty/person</strong> for no-show or cancel <24 hrs. <strong>90-min seated time.</strong> Door <strong>#13</strong>, Amberes 65, Juárez. No sign outside.</span>
-      <span data-lang="es">Confirmado vía email. Credit card guarantee required. <strong>$250 MXN penalty/persona</strong> por no-show o cancelación <24 hrs. <strong>90-min seated time.</strong> Puerta <strong>#13</strong>, Amberes 65, Juárez. Sin letrero afuera.</span>
+      <strong>Amberes 65, Juárez (puerta #13)</strong><br>
+      <span data-lang="en">Confirmed via email. Credit card guarantee. <strong>$250 MXN penalty/person</strong> for no-show or cancel <24 hrs. <strong>90-min seated.</strong> Smart casual dress code.</span>
+      <span data-lang="es">Confirmado vía email. Credit card guarantee. <strong>$250 MXN penalty/persona</strong> por no-show o cancelación <24 hrs. <strong>90-min seated.</strong> Dress code smart casual.</span>
     </div>
   </div>
 
@@ -2956,22 +3319,22 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
       <span data-lang="es">Dom 26 Abr · 11am-6pm · pases individuales</span>
     </div>
     <div class="res-details">
-      <span data-lang="en"><strong>Action:</strong> Each person registers free at <strong>acceso.chilango.com</strong>. Takes 2 min. Pass arrives by email. Entrance is free but gated by pass.</span>
-      <span data-lang="es"><strong>Action:</strong> Cada persona se registra gratis en <strong>acceso.chilango.com</strong>. Toma 2 min. El pase llega por email. Entrada gratis pero con pase.</span>
+      <strong>Monumento a la Revolución</strong><br>
+      <span data-lang="en"><strong>Action:</strong> Each person registers free at <strong>acceso.chilango.com</strong>. Takes 2 min. Pass arrives by email. Free entry but gated by pass.</span>
+      <span data-lang="es"><strong>Action:</strong> Cada persona se registra gratis en <strong>acceso.chilango.com</strong>. Toma 2 min. El pase llega por email. Gratis pero con pase.</span>
     </div>
   </div>
 
   <div class="res-card pending">
-    <div class="res-name">Mi Compa Chava</div>
+    <div class="res-name">Mi Compa Chava — Coyoacán branch</div>
     <div class="res-when">
-      <span data-lang="en">Wed Apr 29 · dinner · 6 people</span>
-      <span data-lang="es">Mié 29 Abr · cena · 6 personas</span>
+      <span data-lang="en">Wed Apr 29 · dinner ~5pm · 6 people</span>
+      <span data-lang="es">Mié 29 Abr · cena ~5pm · 6 personas</span>
     </div>
     <div class="res-details">
-      <span data-lang="en"><strong>Action:</strong> DM @micompachava on Instagram for weekday reservation.<br>
-      Tue-Sun 12pm-8pm. Roma: Zacatecas 172. If walk-in only, arrive 5:30pm.</span>
-      <span data-lang="es"><strong>Action:</strong> DM @micompachava en Instagram para weekday reservation.<br>
-      Tue-Sun 12pm-8pm. Roma: Zacatecas 172. Si walk-in only, llegar 5:30pm.</span>
+      <strong>Pdte. V. Carranza 109, Coyoacán (NOT Roma)</strong><br>
+      <span data-lang="en"><strong>Action:</strong> DM @micompachava on Instagram for weekday reservation. Tue-Sun 12pm-8pm. If walk-in, arrive 5pm. Coyoacán branch is less crowded + no backtrack from Casa Azul.</span>
+      <span data-lang="es"><strong>Action:</strong> DM @micompachava en Instagram para reserva weekday. Tue-Sun 12pm-8pm. Si walk-in, llegar 5pm. Sucursal Coyoacán menos saturada + sin backtrack post-Casa Azul.</span>
     </div>
   </div>
 
@@ -2983,7 +3346,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
     </div>
     <div class="res-details">
       <span data-lang="en">Viator.com or GetYourGuide.com — "Teotihuacán from Mexico City". <strong>English-language guide</strong>, hotel-area pickup, ~$30-60 USD/person. Book 1-2 weeks ahead.</span>
-      <span data-lang="es">Viator.com o GetYourGuide.com — "Teotihuacán from Mexico City". <strong>English-language guide</strong>, hotel-area pickup, ~$30-60 USD/persona. Reservar 1-2 semanas antes.</span>
+      <span data-lang="es">Viator.com o GetYourGuide.com. <strong>Guía en inglés</strong>, hotel-area pickup, ~$30-60 USD/persona. Reservar 1-2 semanas antes.</span>
     </div>
   </div>
 
@@ -3001,6 +3364,20 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 
   <div class="res-group-label">
     <span data-lang="en">🟢 Verify before trip</span><span data-lang="es">🟢 Verificar antes del viaje</span>
+  </div>
+
+  <div class="res-card verify">
+    <div class="res-name">
+      <span data-lang="en">Dress codes</span><span data-lang="es">Dress codes</span>
+    </div>
+    <div class="res-details">
+      <p><strong>Handshake:</strong> <span data-lang="en">Smart casual enforced. No sneakers, shorts, flip-flops. Collar shirts, dress pants/dark jeans, closed shoes.</span>
+      <span data-lang="es">Smart casual estricto. No tenis, shorts, flip-flops. Camisa con cuello, pantalón de vestir/jeans oscuros, zapato cerrado.</span></p>
+      <p><strong>Contramar:</strong> <span data-lang="en">Business casual / smart casual. No shorts or sneakers.</span>
+      <span data-lang="es">Business casual / smart casual. No shorts ni tenis.</span></p>
+      <p><strong>Bellas Artes:</strong> <span data-lang="en">No official code but cultural convention — smart casual.</span>
+      <span data-lang="es">Sin código oficial pero convención cultural — smart casual.</span></p>
+    </div>
   </div>
 
   <div class="res-card verify">
@@ -3043,7 +3420,7 @@ html[lang="es"] .timeline pre[data-lang="es"] { display: block; }
 
 </div>
 
-<div class="footnote">CDMX · Apr 25 — May 01 · 2026 · v6</div>
+<div class="footnote">CDMX · Apr 25 — May 01 · 2026 · v7</div>
 
 <script>
 const html = document.documentElement;
@@ -3057,7 +3434,6 @@ function setLang(lang) {
 
 langButtons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.l)));
 
-// View tabs
 const viewTabs = document.querySelectorAll('.view-tab');
 const views = document.querySelectorAll('.view');
 viewTabs.forEach(tab => {
@@ -3069,12 +3445,10 @@ viewTabs.forEach(tab => {
   });
 });
 
-// Day / place expand
 document.querySelectorAll('.day-header, .place-header').forEach(header => {
   header.addEventListener('click', () => header.parentElement.classList.toggle('open'));
 });
 
-// Init
 setLang('en');
 </script>
 
